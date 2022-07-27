@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:wght@100;700&family=Smooch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.left {
+    background-color: #C1C1C1;
+    width: 70%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateX(-100%);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* display: inline; */
+    /* transform: translateX(100%); */
+    /* z-index: 4; */
+}
+
+.inside {
+    display: flex;
+}
+
+
+.right {
+    background-color: grey;
+    width: 30%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    transform: translateX(100%);
+    /* z-index: 4; */
+}
+
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    border: 1px solid black;
+    height: 600px;
+    width: 400px;
+    /* background: grey; */
+    border-radius: 300px;
+    background-image: url(images/stu.jpeg);
+    background-size: 452px;
+}
+
+
+.content {
+    text-align: center;
+    /* margin-bottom: 300px; */
+    /* padding: 150px; */
+}
+
+.content h1 {
+    font-size: 5.5rem;
+    font-family: 'Smooch';
+    font-weight: 100;
+}
+
+.content h2 {
+    font-size: 4rem;
+    sive;
+    font-weight: 8;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+
+}
+
+.content h3 {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    /* font-weight: 200; */
+}
+
+.content h4 {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    /* font-weight: 10; */
+
+}
+
+/* .slider4 {
+    background-color: #C1C1C1;
+    height: 100vh;
+    display: inline;
+    width: 60%;
+} */
+
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Smooch', cursive; */
+
+
+input[type="submit"] {
+    border: 0;
+    border-radius: 8px;
+    padding-bottom: 0;
+    height: 60px;
+    background: #df2359;
+    color: white;
+    cursor: pointer;
+    transition: all 600ms ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background: #C0392B;
+}
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+button {
+    margin: 0 auto;
+    padding: 20px;
+    width: 162px;
+    border-radius: 76px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.btn button a {
+    text-decoration: none;
+    color: black;
+}

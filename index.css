@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    Padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josephin Sans',sans-serif;
+}
+.header{
+    background-color:#F5F5F5;
+}
+.clglogo{
+    /* margin: auto;     */
+    height:80px;
+    display:inline-block;
+}
+.navigation{
+    display:inline;
+}
+.toggle{
+    display: none;
+}
+.navigation ul{
+    float:right;
+    /* margin-right: 70px; */
+}
+.navigation ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 30px
+}
+.navigation ul li a{
+    font-weight: bolder;
+    color: #b71c1c;
+    font-size:17px;
+    text-decoration :none;
+}
+
+.section1{
+    text-align: center;    
+
+}
+.section1 img{
+    width:100%;
+}
+.section1 h2{
+    font-weight:150;
+    font-family:Times new Roman;
+    font-size:42px;
+    Display:inline-block;   
+}
+.block1{
+    position: absolute;
+    z-index:1;
+    margin-bottom:-35px;
+    display:inline-block;
+    height:120px; 
+    width:60%;
+    background-color: #b71c1c;
+}
+.block1 h3{
+    margin-top:22px;
+    margin-bottom: 15px;
+    margin-left: 120px;
+    color:white;
+}
+.block1 h1{
+    font-weight:300;
+    margin-left: 120px;
+    color:white;
+}
+
+.block2{
+    margin-left:100px;
+    display:inline-block;
+    border-right:1px solid black;
+    border-bottom:1px solid black;
+    box-shadow:1px 5px 5px 1px #aaaaaa;
+    height:420px;width: 90%;
+}
+.sharemsg{
+    margin-top:20px;
+    margin-right:20px;
+    float:right;
+    width:350px;
+    height:350px;
+    box-shadow:0px 7px 10px 1px #B9D9EB;
+    display:inline;
+}
+
+.sharemsg h1{
+    font-weight:350;
+    font-size:36px;
+    font-family:Times new Roman;
+    color:#b71c1c;
+    margin-top:30px;
+    margin-left:25px;
+}
+.sharemsg p{
+    font-size:23px;
+    font-family:Times new Roman;
+    margin-top:30px;
+    margin-left:25px;
+}
+.sharemsg a{
+    font-weight:bold;
+    font-size:18px;
+    font-family:Times new Roman;
+    margin-left:25px;
+}
+.quote{
+    margin-top: 150px;
+    font-size:28px;
+    font-family:Times new Roman;
+    margin-left:28px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.row h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.plans{
+    min-height: 50vh;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+.plans-col{
+    min-height: 250px;
+    position: relative;
+    width: fit-content;
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+/* h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px;
+} */
+
+.plans-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+/* events css begins */
+
+section {
+    width: 100%;
+    height: 100vh;
+    
+    background-size: cover;
+}
+  
+/* Styling the left floating section */
+section .leftBox {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 50px;
+    box-sizing: border-box;
+}
+  
+/* Styling the background of
+    left floating section */
+section .leftBox .content {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    transition: .5s;
+}
+  
+/* Styling the hover effect 
+    of left floating section */
+section .leftBox .content:hover {
+    background: #e91e63;
+}
+  
+/* Styling the header of left
+    floating section */
+section .leftBox .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+  
+/* Styling the paragraph of
+    left floating section */
+section .leftBox .content p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+  
+/* Styling the three events section */
+section .events {
+    overflow: auto;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    float: right;
+    box-sizing: border-box;
+}
+  
+/* Styling the links of
+the events section */
+section .events ul {
+    /* position: absolute;  */
+    top: 50%;
+    /* transform: translateY(-50%); */
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+}
+  
+/* Styling the lists of the event section */
+section .events ul li {
+    list-style: none;
+    background: #fff;
+    box-sizing: border-box;
+    height: 350px;
+    margin: 15px 0;
+}
+  
+/* Styling the time class of events section */
+section .events ul li .time {
+    position: relative;
+    padding: 20px;
+    background: #262626;
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    transition: .5s;
+}
+  
+/* Styling the hover effect
+    of events section */
+section .events ul li:hover .time {
+    background: #e91e63;
+}
+  
+/* Styling the header of time
+    class of events section */
+section .events ul li .time h2 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 60px;
+    line-height: 30px;
+}
+  
+/* Styling the texts of time
+class of events section */
+section .events ul li .time h2 span {
+    font-size: 30px;
+}
+  
+/* Styling the details
+class of events section */
+section .events ul li .details {
+    padding: 20px;
+    background: #fff;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+/* Styling the header of the
+details class of events section */
+section .events ul li .details h3 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+}
+  
+/* Styling the lists of details
+class of events section */
+section .events ul li .details p {
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 16px;
+}
+  
+/* Styling the links of details
+class of events section */
+section .events ul li .details a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1.5px solid #262626;
+    margin-top: 8px;
+    font-size: 18px;
+    transition: .5s;
+}
+  
+/* Styling the details class's hover effect */
+section .events ul li .details a:hover {
+    background: #e91e63;
+    color: #fff;
+    border-color: #e91e63;
+}
+
+/* footer css begins */
+
+
+/* .footer { */
+    /* position: fixed; */
+    /* left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: #b71c1c;
+    color: white;
+    text-align: center;
+  } */
+
+  .footer ul {
+    display: inline-grid;
+    grid-auto-flow: row;
+    grid-gap: 24px;
+    justify-items: center;
+    margin: auto;
+  }
+  
+  @media (min-width: 500px) {
+    .footer ul {
+      grid-auto-flow: column;
+    }
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+  }
+  
+  .footer a:hover {
+    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+  }
+  
+  .footer li:last-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  .footer li:hover ~ li p {
+    animation: wave-animation 0.3s infinite;
+  }
+  
+  /* below is just for demo styling */
+  
+  .footer {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: #002a38;
+    line-height: 1.3;
+    font-family: Menlo, monospace;
+  }
+  
+  @keyframes wave-animation {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(20deg);
+    }
+    75% {
+      transform: rotate(-15deg);
+    }
+  }
+  

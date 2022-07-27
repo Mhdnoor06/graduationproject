@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style2.css" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&family=Smooch&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:wght@100;700&family=Smooch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.left {
+    background-color: #C1C1C1;
+    width: 70%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateX(-100%);
+    /* display: inline; */
+    /* transform: translateX(100%); */
+    /* z-index: 4; */
+}
+
+
+.right {
+    background-color: grey;
+    width: 30%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    transform: translateX(100%);
+    /* z-index: 4; */
+}
+
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    border: 1px solid black;
+    height: 600px;
+    width: 400px;
+    /* background: grey; */
+    border-radius: 300px;
+    background-image: url(stu.jpeg);
+    background-size: 452px;
+}
+
+
+.content {
+    text-align: center;
+    /* margin-bottom: 300px; */
+    padding: 150px;
+}
+
+.content h1 {
+    font-size: 5.5rem;
+    font-family: 'Smooch';
+    font-weight: 100;
+}
+
+.content h2 {
+    font-size: 4rem;
+    sive;
+    font-weight: 8;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+
+}
+
+.content h3 {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    /* font-weight: 200; */
+}
+
+.content h4 {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    /* font-weight: 10; */
+
+}
+
+/* .slider4 {
+    background-color: #C1C1C1;
+    height: 100vh;
+    display: inline;
+    width: 60%;
+} */
+
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Smooch', cursive; */
+
+
+input[type="submit"] {
+    border: 0;
+    border-radius: 8px;
+    padding-bottom: 0;
+    height: 60px;
+    background: #df2359;
+    color: white;
+    cursor: pointer;
+    transition: all 600ms ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background: #C0392B;
+}
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+button {
+    margin: 0 auto;
+    padding: 20px;
+    width: 162px;
+    border-radius: 76px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.btn button a {
+    text-decoration: none;
+    color: black;
+}
+    </style>
+  </head>
+  <body>
+    <div class="left">
+      <br /><br /><br />
+      <hr
+        style="
+          margin: auto;
+          height: 2px;
+          background-color: black;
+          border: none;
+          width: 80%;
+        "
+      />
+
+      <div class="content">
+        <h1>Congratulations</h1>
+        <br />
+        <h2><span id="result" /></h2>
+        <h3>We Are So Proud Of You</h3>
+        <br /><br />
+        <h4>
+          Wish You All The Best For You <br />
+          And Your Future
+        </h4>
+      </div>
+
+      <hr
+        style="
+          margin: auto;
+          height: 2px;
+          background-color: black;
+          border: none;
+          width: 80%;
+        "
+      />
+
+      <div class="btn">
+        <button style="cursor: Pointer"><a href="#">Click Here</a></button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="right">
+        <div class="profile"></div>
+      </div>
+      <!-- <div class="input">
+        <input type="submit" class="submit" id="sub" idvalue="Enter" />
+      </div> -->
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+      integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="result.js"></script>
+
+    
+  </body>
+</html>
+<script>window.addEventListener("load", () => {
+    const params = new URL(document.location).searchParams;
+    const name = params.get("name");
+  
+    document.getElementById("result").innerHTML = name.toUpperCase();
+  });
+  
+  const t3 = gsap.timeline({ defaults: { ease: "power1.out" } });
+  const left = document.querySelector(".left");
+  const right = document.querySelector(".right");
+  t3.to(left, { x: "0%", duration: 1, delay: 1 });
+  t3.to(right, { x: "0%", duration: 1, delay: 0 });
+  </script>

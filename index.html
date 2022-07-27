@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1024" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img class="logo1" src="images/cap.png" alt="" />
+        <h1 class="logo">Welcome Graduates Of 2022</h1>
+        <!-- <img src="./burger." alt="hamburger" class="hamburger" /> -->
+      </nav>
+      <section>
+        <div class="hero sec">
+          <img class="sec" src="images/img.jpg" alt="" />
+          <h2 class="headline sec">Dream big</h2>
+        </div>
+      </section>
+    </header>
+
+    <div class="slider"></div>
+
+    <div class="intro">
+      <div class="intro-text">
+        <h1 class="hide">
+          <span class="text">Creating inovation</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text">For Everyday</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text">people.</span>
+        </h1>
+      </div>
+    </div>
+    <div class="slider2"></div>
+
+    <div class="slider3">
+      <div id="container">
+        <form method="GET" action="index1.html" onsubmit="">
+          <img src="https://bit.ly/2tlJLoz" /><br />
+          <input
+            id="name"
+            type="text"
+            name="name"
+            value=""
+            placeholder="Enter Your Name"
+          /><br />
+          <input type="submit" class="submit" id="sub" idvalue="Enter" /><br />
+          <!-- <span><a href="#">Forgot Password?</a></span> -->
+        </form>
+      </div>
+    </div>
+
+    <!-- <script>
+      let Myfuntion = function () {
+        document.write(`<div style="background-color: grey;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        transform: translateX(100%);
+        z-index: 4;"class="slider4">
+        </div>`);
+
+        document.write(`<div style="background-color:#C1C1C1;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        transform: translateX(-100%);
+        z-index: 4;"class="slider5">
+      </div>`);
+
+        const t3 = gsap.timeline({ defaults: { ease: "power1.out" } });
+        const slider4 = document.querySelector(".slider4");
+        const slider5 = document.querySelector(".slider5");
+        t3.to(slider4, { x: "70%", duration: 1, delay: 0 });
+        t3.to(slider5, { x: "-30%", duration: 1, delay: 0 });
+
+        // break;
+      };
+    </script> -->
+
+    <!-- <div class="right"></div> -->
+
+    <!-- <div class="slider5"></div> -->
+
+    <script>
+      document.querySelector(".submit").addEventListener("click", function () {
+        const name = document.querySelector("#name").value;
+
+        console.log(name);
+      });
+    </script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+      integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
